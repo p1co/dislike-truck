@@ -154,7 +154,7 @@ $(function() {
   function appendSimonov(add) {
     if ($('.simonov').length < 1 && add) {
       $('.register-loader')
-        .before($('<img>').attr({'src': '//img-fotki.yandex.ru/get/9515/203537249.14/0_136180_483da1b3_orig.gif',
+        .before($('<img>').attr({'src': '//pbs.twimg.com/profile_images/619573624903761920/EGZ2I6wG.jpg',
                                   'class': 'simonov'})
                           .css({'float': 'left', 'margin-right': '5px'}));
     } else {
@@ -197,7 +197,8 @@ $(function() {
   }
 
   function requestPlaylistId(channelId) {
-    appendSimonov(true);
+    
+    (true);
     var request = gapi.client.youtube.channels.list({
       id: channelId,
       part: 'contentDetails'
